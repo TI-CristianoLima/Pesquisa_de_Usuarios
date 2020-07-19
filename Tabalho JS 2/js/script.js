@@ -90,14 +90,15 @@ function filterInput(inputUser){
   if (totalUser > 1){
     cardTitleLeft.textContent = `${totalUser} usuários encontrados`;
     cardTitleRight.textContent = `Estatísticas dos Usuários`;
+    renderStatics(); 
   }else if (totalUser === 1){
     cardTitleLeft.textContent = `${totalUser} usuário encontrado`;
-    cardTitleRight.textContent = `Estatística do Usuário`;    
+    cardTitleRight.textContent = `Estatística do Usuário`; 
+    renderStatics();   
   }else{
-    cardTitleLeft.textContent = `Nenhum usuário encontrado`;
+    cardTitleLeft.textContent = `Nenhum usuário encontrado`;    
   }
   renderUser();
-  renderStatics();
 }else{
   return;   
 }
