@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/estilo.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <title>Trabalho JS 2 - BootCamp IGTI</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h1 class="center-align">Pesquisa de Usuários</h1>
+          <div class="col s12 center-align" id="pre-load">
+            <div class="col s5 right-align" id="load">
+              <div class="preloader-wrapper small active">
+                <div class="spinner-layer spinner-green-only">
+                  <div class="circle-clipper left">
+                    <div class="circle"></div>
+                  </div>
+                  <div class="gap-patch">
+                    <div class="circle"></div>
+                  </div>
+                  <div class="circle-clipper right">
+                    <div class="circle"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col s7 left-align"">
+            <h3>Carregando...</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 center-align">
+          <div class="col s9 input-field">
+            <input type="text"  id="inputarea" disabled  placeholder="Digite aqui a sua pesquisa..." ></input>
+            <label for="inputarea" class="">
+              <i class="material-icons">find_in_page</i>Pesquisar</label
+            >
+          </div>
+          <div class="col s3">
+            <a class="waves-effect btn disabled"  id="btn">BUSCAR</a>
+          </div>
+        </div>
+      </div>
+      <div class="divider" id="divider"></div>
+    </div>
+    <div class="container">
+      <div class="row" id="row">
+        <div class="col s5 box">
+              <h4 id="return-user">Aguardando pesquisa</h4>
+                <div id="usercard"></div>
+        </div>
+        <div class="col s5 box" id="row-statics">
+              <h4 id="title-estatistica">Aguardando pesquisa</h4>
+              <div id="mapcard"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#load {
+  margin-top: 33px;
+}
+
+
+#usercard{
+  width: 100%;
+  height: auto;
+}
+
+#img{
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
+
+#row{
+  display: flex;
+}
+
+.res-row-user{
+  padding: 15px;
+  border-radius: 5%;
+}
+
+.bold{
+  font-weight: bold !important;
+  font-size: 1.1rem;
+}
+
+#names{
+  margin-top: 28px;
+  font-weight: bold;
+}
+
+#pre-load {
+  margin-bottom: 3em;
+}
+
+#divider-card {
+  margin-bottom: 15px;
+}
+
+#divider {
+  margin-bottom: 30px;
+}
+
+.d-none {
+  display: none !important;
+}
+
+h4 {
+  margin-top: 25px !important;
+  margin-bottom: 36px !important;
+  
+  text-align: center;
+}
+
+h1 {
+  padding: 20px !important;
+}
